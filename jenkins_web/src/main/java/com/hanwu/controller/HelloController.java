@@ -13,7 +13,7 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello(User user, ModelMap map) {
         map.put("date", new Date());
-        map.put("username", user.getUsername());
+        map.put("username", "张三");
         return "hello";
     }
 }
