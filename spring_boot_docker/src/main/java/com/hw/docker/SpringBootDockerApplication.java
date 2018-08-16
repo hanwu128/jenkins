@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 @SpringBootApplication
 @RestController
 public class SpringBootDockerApplication {
@@ -15,6 +17,6 @@ public class SpringBootDockerApplication {
 
     @GetMapping("/")
     public String index() {
-        return "你好,docker";
+        return "你好,docker"+new Date().getTime();
     }
 }
