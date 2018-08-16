@@ -17,6 +17,6 @@ public class SpringBootDockerApplication {
 
     @GetMapping("/")
     public String index() {
-        return "你好,docker"+new Date().getTime();
+        return "你好,docker,现在时间是："+new Date().getTime();
     }
 }
